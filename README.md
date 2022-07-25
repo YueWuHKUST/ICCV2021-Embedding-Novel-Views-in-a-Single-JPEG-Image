@@ -8,3 +8,4 @@ Embedding-Novel-Views-in-a-Single-JPEG-Image
 - [ ] Release test
 - [ ] Release checkpoints
 - [ ] release training 
+- [ ] Write document and instructions
