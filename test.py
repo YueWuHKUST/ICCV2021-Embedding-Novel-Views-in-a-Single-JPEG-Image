@@ -20,13 +20,14 @@ from models.unet_model import UNetEncoder,UNetDecoder
 from models.resunet_model import ResUnetEncoder, ResUnetDecoder
 from opt_test import get_opts
 from data.real_dataset import RealDataset
-from models.losses import LossFunction
+# from models.losses import LossFunction
 from DiffJPEG.DiffJPEG import DiffJPEG
 from models.differentiable_quantize import DifferentiableQuantize
 from color_jittering import ColorJitter
 from random_crop_resize import RandomCropResize
-from skimage.measure import compare_psnr
-from skimage.measure import compare_ssim
+from skimage.metrics import peak_signal_noise_ratio as compare_psnr
+# from skimage.measure import compare_psnr
+from skimage.metrics import structural_similarity as compare_ssim
 torch.autograd.set_detect_anomaly(True)
 
 

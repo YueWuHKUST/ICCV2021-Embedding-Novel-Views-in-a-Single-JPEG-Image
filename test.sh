@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=6 python test.py \
+    --image_dir './datasets/stereo_mpi' \
+    --checkpoints_dir "./checkpoints/" \
+    --name "stereo_final" \
+    --batch_size_each_gpu 1 \
+    --image_height 288 \
+    --image_width 512 \
+    --load_pretrain "./checkpoints/stereo_final/models" \
+    --which_epoch 3 \
+    --which_iter 15000 \
+    --random_resize_ratio 0.0 \
+    --use_png \
+    --encoder_type 2 \
+    --decoder_type 1
